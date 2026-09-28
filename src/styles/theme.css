@@ -1,0 +1,93 @@
+/* ---------- Palette v2 section themes: Deep Navy / Warm White / Champagne Gold / Soft Sage ---------- */
+
+.intro, .about-preview, .featured, .status-strip, .journey,
+.awards, .news, .journal-preview, .contact-home,
+.story, .who, .pillars, .approach, .leadership, .about-awards,
+.project-directory, .ongoing-dir, .upcoming-dir, .completed-dir,
+.journal-page, .article-body, .article-projects,
+.locations-page, .contact-page, .contact-map-section,
+.detail-overview, .detail-architecture, .detail-amenities, .detail-gallery,
+.detail-progress, .detail-location, .detail-testimonials, .detail-enquire,
+.related-projects {
+  background: var(--warm);
+  color: var(--charcoal);
+  --ivory: var(--navy);
+  --ivory-2: var(--charcoal-2);
+  --ivory-3: var(--charcoal-2);
+  --muted: rgba(38, 50, 56, 0.7);
+  --muted-2: rgba(38, 50, 56, 0.46);
+  --line: rgba(11, 31, 51, 0.14);
+  --line-dark: rgba(11, 31, 51, 0.2);
+  --ink: var(--white);
+  --ink-2: var(--warm);
+  --gold-dark: var(--gold-dark);
+  --gold-light: var(--gold);
+}
+
+.journey { background: var(--warm-2); }
+
+/* Overlay chips and labels above imagery stay warm-white on light sections */
+.pc-category, .pc-concept, .ac-view, .uc-seal, .cd-year, .og-status,
+.about-video-label, .gallery-zoom, .contact-map-overlay p {
+  color: var(--warm);
+}
+
+/* Written testimonials become white cards on light backgrounds */
+.written-card { background: var(--ink); }
+
+/* ---------- Sustainability: soft sage ---------- */
+.sustainability {
+  background: linear-gradient(180deg, var(--sage-soft) 0%, var(--sage-mist) 100%);
+  color: var(--charcoal);
+  --ivory: var(--navy);
+  --ivory-2: var(--charcoal-2);
+  --muted: rgba(38, 50, 56, 0.72);
+  --muted-2: rgba(38, 50, 56, 0.46);
+  --line: rgba(76, 92, 82, 0.22);
+  --ink: var(--white);
+  --ink-2: var(--sage-soft);
+  --gold-light: var(--gold);
+}
+.sustainability .sustain-card:hover { border-color: var(--sage); background: rgba(168, 181, 160, 0.18); }
+.sustainability .sustain-icon { border-color: rgba(201, 169, 110, 0.5); }
+
+/* ---------- Awards achievements navy band ---------- */
+.awards .achievements {
+  background: var(--navy);
+  border: none;
+  padding: clamp(40px, 5vw, 64px) clamp(24px, 4vw, 44px);
+  --ivory: var(--warm);
+  --muted: rgba(247, 245, 239, 0.62);
+  --muted-2: rgba(247, 245, 239, 0.36);
+  --line: rgba(247, 245, 239, 0.14);
+  --gold-light: var(--gold-light);
+}
+.awards .achievements .section-eyebrow { color: var(--gold); }
+.awards .achievements .eyebrow-line { background: var(--gold); }
+.awards .achievements .stat { border-color: rgba(201, 169, 110, 0.2); background: rgba(247, 245, 239, 0.02); }
+.awards .achievements .stat-value { color: var(--gold); }
+.awards .achievements .stat-suffix { color: var(--gold); }
+
+/* ---------- Light form fields ---------- */
+.contact-home .form-field label, .contact-page .form-field label,
+.detail-enquire .form-field label, .contact-about-panel .form-field label {
+  color: var(--charcoal-2);
+}
+.contact-home .form-field input, .contact-home .form-field select, .contact-home .form-field textarea,
+.contact-page .form-field input, .contact-page .form-field select, .contact-page .form-field textarea,
+.detail-enquire .form-field input, .detail-enquire .form-field select, .detail-enquire .form-field textarea,
+.contact-about-panel .form-field input, .contact-about-panel .form-field select, .contact-about-panel .form-field textarea {
+  background: var(--white);
+  border-color: rgba(11, 31, 51, 0.22);
+  color: var(--charcoal);
+}
+.contact-home .form-field input::placeholder, .contact-home .form-field textarea::placeholder,
+.contact-page .form-field input::placeholder, .contact-page .form-field textarea::placeholder,
+.detail-enquire .form-field input::placeholder, .detail-enquire .form-field textarea::placeholder,
+.contact-about-panel .form-field input::placeholder, .contact-about-panel .form-field textarea::placeholder {
+  color: rgba(38, 50, 56, 0.4);
+}
+.contact-home .form-field select option, .contact-page .form-field select option,
+.detail-enquire .form-field select option, .contact-about-panel .form-field select option {
+  background: var(--white);
+}
